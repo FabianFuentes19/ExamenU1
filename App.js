@@ -30,7 +30,7 @@ const getNews = async (event) => {
     card.className = "col-md-6 mb-4";
     card.innerHTML = ` 
                         <div class="card h-100"> 
-                        <img src="${element.urlToImage || "https://placeholder.com/400x200?text=Imagen+no+disponible"}" class="card-img-top" alt="${element.title}">
+                        <img src="${element.urlToImage }" class="card-img-top" alt="${element.title}">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">titulo: ${element.title}</h5>
                             <p class="card-text text-muted">descripcion: ${element.description || "Sin descripción disponible"}</p>
