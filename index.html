@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen unidad 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <h1 class="text-center mb-4 fw-bold text-primary">
+        Consulta de noticias
+      </h1>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10 shadow-sm p-4 bg-white rounded">
+          <form action="formNews">
+            <div class="mb-4">
+              <label for="inputBusqueda" class="form-label fw-semibold"
+                >Buscar noticia:</label
+              >
+              <input
+                type="text"
+                id="inputBusqueda"
+                class="form-control form-control-lg"
+                placeholder="Ej. ZyCrypto"
+              />
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label
+                  for="fechaInicio"
+                  class="form-label fw-semibold"
+                  >Fecha de inicio</label
+                >
+                <input type="date" id="fechaInicio" class="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label
+                  for="fechaFin"
+                  class="form-label fw-semibold"
+                  >Fecha de fin</label
+                >
+                <input type="date" id="fechaFin" class="form-control" />
+              </div>
+            </div>
+
+            <div class="d-grid gap-2 col-md-4 mx-auto">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg shadow"
+                id="btnBuscar"
+              >
+                Buscar Noticias
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr>
+
+         <div class="row g-4" id="contenido">
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
